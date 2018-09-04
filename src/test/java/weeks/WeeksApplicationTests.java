@@ -1,4 +1,4 @@
-package com.twowings.weeks;
+package weeks;
 
 import org.junit.Ignore;
 import org.junit.Test;
