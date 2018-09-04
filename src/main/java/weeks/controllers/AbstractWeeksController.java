@@ -1,6 +1,7 @@
 package weeks.controllers;
 
 import java.util.List;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,20 +14,20 @@ import weeks.services.AbstractWeeksService;
 @RequiredArgsConstructor
 public abstract class AbstractWeeksController<ENTITY, ID> {
 
-  private final AbstractWeeksService<ENTITY, ID> weeksService;
+    private final AbstractWeeksService<ENTITY, ID> weeksService;
 
-  @GetMapping
-  public List<ENTITY> getAll() {
-    return weeksService.getAll();
-  }
+    @GetMapping
+    public List<ENTITY> getAll() {
+        return weeksService.getAll();
+    }
 
-  @PostMapping("/add")
-  public void add(@RequestBody ENTITY entity) {
-    weeksService.add(entity);
-  }
+    @PostMapping("/add")
+    public void add(@RequestBody ENTITY entity) {
+        weeksService.add(entity);
+    }
 
-  @RequestMapping(method = RequestMethod.DELETE, path = "/remove/{id}")
-  public void removeById(@PathVariable ID id) {
-    weeksService.removeById(id);
-  }
+    @RequestMapping(method = RequestMethod.DELETE, path = "/remove/{id}")
+    public void removeById(@PathVariable ID id) {
+        weeksService.removeById(id);
+    }
 }
