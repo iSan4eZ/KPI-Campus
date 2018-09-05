@@ -1,8 +1,8 @@
 package weeks.repositories.impl;
 
 import weeks.entities.StudentEntity;
-import weeks.repositories.CampusRepository;
+import weeks.repositories.WeeksRepository;
 
-public interface StudentRepository extends CampusRepository<StudentEntity, Integer> {
+public interface StudentRepository extends WeeksRepository<StudentEntity, Integer> {
 
 }

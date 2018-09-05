@@ -4,23 +4,23 @@ import com.google.common.collect.Lists;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
-import weeks.repositories.CampusRepository;
+import weeks.repositories.WeeksRepository;
 
 @RequiredArgsConstructor
-public abstract class AbstractCampusService<ENTITY, ID> {
+public abstract class AbstractWeeksService<ENTITY, ID> {
 
-  private final CampusRepository<ENTITY, ID> campusRepository;
+  private final WeeksRepository<ENTITY, ID> weeksRepository;
 
   public List<ENTITY> getAll() {
-    return Lists.newArrayList(campusRepository.findAll());
+    return Lists.newArrayList(weeksRepository.findAll());
   }
 
   public void add(ENTITY entity) {
-    campusRepository.save(entity);
+    weeksRepository.save(entity);
   }
 
   @Transactional
   public void removeById(ID id) {
-    campusRepository.deleteById(id);
+    weeksRepository.deleteById(id);
   }
 }
