@@ -11,6 +11,17 @@
   <name>KPI Campus</name>
   <description>Project for KPI by Stas and Julja</description>
 
+  <developers>
+    <developer>
+      <name>Stas Panasiuk</name>
+      <email>someemail</email>
+    </developer>
+    <developer>
+      <name>Julja Vysotska</name>
+      <email>someemail</email>
+    </developer>
+  </developers>
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
