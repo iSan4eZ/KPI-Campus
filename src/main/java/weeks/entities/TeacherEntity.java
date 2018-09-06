@@ -16,5 +16,6 @@ public class TeacherEntity {
     @GeneratedValue
     private int id;
     private String name;
+    private String sname;
 }
 
