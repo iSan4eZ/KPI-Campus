@@ -10,7 +10,7 @@ import weeks.services.impl.TeacherService;
 @RequestMapping("teachers")
 public class TeacherController extends AbstractWeeksController<TeacherEntity, Integer> {
 
-    public TeacherController(TeacherService teacherService){
-        super (teacherService);
-    }
+  public TeacherController(TeacherService teacherService) {
+    super(teacherService);
+  }
 }

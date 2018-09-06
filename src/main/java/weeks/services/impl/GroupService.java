@@ -8,7 +8,7 @@ import weeks.services.AbstractWeeksService;
 @Service
 public class GroupService extends AbstractWeeksService<GroupEntity, Integer> {
 
-    public GroupService(GroupRepository groupRepository){
-        super (groupRepository);
-    }
+  public GroupService(GroupRepository groupRepository) {
+    super(groupRepository);
+  }
 }
