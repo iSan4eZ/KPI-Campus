@@ -15,4 +15,6 @@ public class StudentEntity {
   @GeneratedValue
   private int id;
   private String name;
+  private String sname;
+  private int idGroup;
 }
